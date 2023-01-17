@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account re-aesthetic</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="home.html"><img src="img/logo.jpg" alt="logo" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="menuitems">
+                        <li><a href="home.html" >Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#" class="active">Account</a></li>
+                    </ul>
+                </nav>
+                <div class="icon">
+                    <a href="cartpage.html" ><i class="fas fa-cart-plus"></i></a>
+                </div>
+                <img src="img/menu.png" class="menuicon" onclick="menutoggle()">
+            </div>
+        </div>
+
+
+        <div class="accountpage">
+            <div class="container">
+                <div class="row">
+                    <div class="cols">
+                        <img src="img/various1.png" width="100%">
+                    </div>
+                    <div class="cols">
+                        <div class="formcontainer">
+                            <div class="formbtn">
+                                <span onclick="login()">Login</span>
+                                <span onclick="resister()">Resister</span>
+                                <hr id="indicator">
+                            </div>
+
+                            <form id="loginform">
+                                <input type="text" placeholder="Username">
+                                <input type="password" placeholder="Password">
+                                <button type="submit" class="btn">Login</button>
+                                <a href="">Forgot Password</a>
+                            </form> 
+                            <form id="regform">
+                                <input type="text" placeholder="Username">
+                                <input type="email" placeholder="email">
+                                <input type="password" placeholder="Password">
+                                <button type="submit" class="btn">Resister</button>
+                            </form> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+   
+
+
+    
+
+
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footercol1">
+                    <h2>Download Our App</h2>
+                    <p>Download for ios and mobile</p>
+                    <div class="applogo">
+                        <img src="img/playstore.png" alt="">
+                        <img src="img/ios.png" alt="">
+                    </div>
+                </div>
+                <div class="footercol2">
+                    <img src="img/logoblack.png" alt="">
+                    <p>Our goal is to sustainably make the pleasure and benefits of sports accessible to the many.</p>
+                </div>
+                <div class="footercol3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li><a href="#"> Coupons</a></li>
+                        <li><a href="#"> Blog posts</a></li>
+                        <li><a href="#"> return policy</a></li>
+                        <li><a href="#"> Join affikiate</a></li>
+                    </ul>
+                </div>
+                <div class="footercol4">
+                    <h3>Social media</h3>
+                    <ul>
+                        <li><a href="#"> Facebook</a></li>
+                        <li><a href="#"> instagram</a></li>
+                        <li><a href="#"> messanger</a></li>
+                        <li><a href="#"> watsapp</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - Kosthetik</p>
+        </div>
+    </div>
+    <script>
+        var menuitems =document.getElementById("menuitems");
+        menuitems.style.maxHeight="0px";
+        function menutoggle(){
+            if (menuitems.style.maxHeight=="0px"){
+                menuitems.style.maxHeight="200px";
+            }
+            else{
+                menuitems.style.maxHeight="0px";
+            }
+        }
+
+        // ----loginlresister----
+        var loginform=document.getElementById("loginform");
+        var regform=document.getElementById("regform");
+        var indicator=document.getElementById("indicator");
+        function resister(){
+            regform.style.transform="translateX(0px)";
+            loginform.style.transform="translateX(0px)";
+            indicator.style.transform="translateX(100px)";
+        }
+        function login(){
+            regform.style.transform="translateX(300px)";
+            loginform.style.transform="translateX(300px)";
+            indicator.style.transform="translateX(0px)";
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/335a9ecabc.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

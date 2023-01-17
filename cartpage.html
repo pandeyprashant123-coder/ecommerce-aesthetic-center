@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page re-aesthetic</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="#"><img src="img/logo.jpg" alt="logo" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="menuitems">
+                        <li><a href="home.html" >Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <div class="icon">
+                    <a href="#" ><i class="fas fa-cart-plus active"></i></a>
+                </div>
+                <img src="img/menu.png" class="menuicon" onclick="menutoggle()">
+            </div>
+        </div>
+
+        <div class="subcontainer cartpage">
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cartinfo">
+                            <img src="img/Hermosa_Hard.png" alt="">
+                            <div>
+                                <h4>HErmosa</h4>
+                                <small>$ 50.00</small><br>
+                                <a href="#">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$ 50</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cartinfo">
+                            <img src="img/Botulax 1.jpg" alt="">
+                            <div>
+                                <h4>Botulax</h4>
+                                <small>$ 50.00</small><br>
+                                <a href="#">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$ 50</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cartinfo">
+                            <img src="img/revolax1.jpg" alt="">
+                            <div>
+                                <h4>REvolex</h4>
+                                <small>$ 50.00</small><br>
+                                <a href="#">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$ 50</td>
+                </tr>
+            </table>
+
+            <div class="totalprice">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>$150</td>
+                    </tr>
+                    <tr>
+                        <td>Tax</td>
+                        <td>13%</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>$180</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+
+   
+
+
+    
+
+
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footercol1">
+                    <h2>Download Our App</h2>
+                    <p>Download for ios and mobile</p>
+                    <div class="applogo">
+                        <img src="img/playstore.png" alt="">
+                        <img src="img/ios.png" alt="">
+                    </div>
+                </div>
+                <div class="footercol2">
+                    <img src="img/logoblack.png" alt="">
+                    <p>Our goal is to sustainably make the pleasure and benefits of sports accessible to the many.</p>
+                </div>
+                <div class="footercol3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li><a href="#"> Coupons</a></li>
+                        <li><a href="#"> Blog posts</a></li>
+                        <li><a href="#"> return policy</a></li>
+                        <li><a href="#"> Join affikiate</a></li>
+                    </ul>
+                </div>
+                <div class="footercol4">
+                    <h3>Social media</h3>
+                    <ul>
+                        <li><a href="#"> Facebook</a></li>
+                        <li><a href="#"> instagram</a></li>
+                        <li><a href="#"> messanger</a></li>
+                        <li><a href="#"> watsapp</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - Kosthetik</p>
+        </div>
+    </div>
+    <script>
+        var menuitems =document.getElementById("menuitems");
+        menuitems.style.maxHeight="0px";
+        function menutoggle(){
+            if (menuitems.style.maxHeight=="0px"){
+                menuitems.style.maxHeight="200px";
+            }
+            else{
+                menuitems.style.maxHeight="0px";
+            }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/335a9ecabc.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
